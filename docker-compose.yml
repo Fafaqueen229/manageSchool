@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  manageschool:
+    image: manageschool
+    build:
+      context: .
+      dockerfile: ./Dockerfile
