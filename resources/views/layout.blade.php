@@ -11,7 +11,7 @@
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
     .table-secondary{
-            background-color: #a5a2a2;
+            background-color: #f8efef;
         }
 
         .div_details{
@@ -25,7 +25,7 @@
             <div class="container-md d-flex ">
                 <img src="{{asset('/images/Capture.PNG')}}" alt="img" style="width: 60px" >
             <div class="container">
-                <a class=" text-white bold text-decoration-none fs-3 " href="#">Ecole 229</a>
+                <a class=" text-white bold text-decoration-none fs-3 " href="/">Ecole 229</a>
                 <a class="btn btn-danger p-2 float-end btn-sm fs-6 mt-3 float-end " href="{{route('logout')}}">Déconnexion</a>
             </div>
             </div>

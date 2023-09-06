@@ -32,10 +32,15 @@ Route::put ('/activate/{id}', 'activate')->name("activate");
 
 Route::controller( enseignantController::class)->middleware('auth')->group(function(){
     Route::get ('/addProf', 'addProf')->name("addProf");
-  
+    Route::get('/gestionEns','gestionEns')->name('gestionEns');
+    Route::post('/store','store')->name('store');
+    Route::get('/index',  "index")->name('index');
+    Route::get ('/create', 'create')->name("create");
+    Route::get ('/update/{id}', 'update')->name("update");
+    Route::get ('/delete/{id}', 'delete')->name("delete");
     Route::get('/listEnseignant','listEnseignant')->name('listEnseignant');
 
-});
+}); 
 /*Route::get('/',  function(){
     return view("addCourse");
 });
@@ -74,14 +79,14 @@ Route::controller(UserController::class)->prefix('user')->group(function(){
     Route::get('/changePassword', "changePassword")->name('changePassword');
     Route::get('/register',  "register")->name('register');
     Route::post('/authentification',  "authentification")->name('authentification');
-    Route::post('/store/register',  "store")->name("storeUser");
+    Route::post('/store',  "store")->name("storeUser");
     Route::get('/verify_email/{email}',  "verify")->name('verifyEmail');
     Route::post('/storePwd',  "storePwd")->name("storePwd");
     Route::get('/verifyPwd',  "verifyPwd")->name('verifyPwd');
     Route::post('/updatePwd/{email}',  "updatePwd")->name('updatePwd');
    
 });
-
+/*
 Route::get('/gestionCours', [ coursController::class,"gestionCours"])->name("gestionCours");
 Route:: get('/attribuer_cours', [ AttributionEtudiantController::class,"index"])->name("attributionCours");
 Route::get('ajout_cours', [ coursController::class,"create"]);
@@ -90,3 +95,4 @@ Route:: get('/cours/delete/{id}', [ coursController::class,"delete"])->name("del
 Route:: get('/cours/update/{id}', [ coursController::class,"update"])->name("update");
 Route:: get('/cours/{id}', [ coursController::class,"show"])->name("cours_show");
 Route::post('/update_cours_store',[coursController::class,'updateStore'])->name('update_cours');
+*/

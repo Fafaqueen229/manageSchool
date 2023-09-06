@@ -7,7 +7,7 @@
         <div class="container">
             <section class="d-flex justify-content-center  py-2">
                 <a href="{{route('created')}}" class="btn btn-sm btn-primary  text-white border border-white fs-5" >Ajouter un étudiant</a>
-                <a href="" class="btn btn-sm btn-primary mx-2 text-white border border-white fs-5" >Gestion des enseignants</a>
+                <a href="/index" class="btn btn-sm btn-primary mx-2 text-white border border-white fs-5" >Gestion des enseignants</a>
                 <a href="/gestionCours" class="btn btn-sm btn-primary mx-2 text-white border border-white fs-5" >Gestion des cours</a>
                 <a href="" class="btn btn-sm btn-primary mx-2 text-white border border-white fs-5" >Attribution des cours</a>
             </section>

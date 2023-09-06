@@ -88,9 +88,6 @@ class UserController extends Controller
 
         return redirect()->back()->with("success", "Veuillez consulter votre mail pour activer votre compte d'utilisateur");
         });
-     
-   
-        //->with('message')
   
     }
     public function verify(Request $request, $email){
